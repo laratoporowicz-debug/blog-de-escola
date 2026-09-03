@@ -37,16 +37,19 @@ height: 250px;
 <h1>Meu primeiro post</h1>
   por: Lara 
 <p> sejam bem vindos ao meu blog Uma jornada de aprendizado, inovação e crescimento.</p>
-    <button>❤️<span>0</span></button>
+  <button>❤️<span>0</span></button>
+<button>👍<span>0</span></button>
 <img src="image.png" alt="">imagem da escola
   </main>
 </body>
   <script>
     const botao = document.querySelector("button");
 botao.addEventListener("click", botaoClicado);
-    function botaoClicado() {
+  function botaoClicado() {
+console.log("fui clicado");
 let texto = botao.querySelector("span");
 texto.textContent++;
 }
+});
   </script>
 </html>
